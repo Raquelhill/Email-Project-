@@ -1,11 +1,11 @@
 const Nylas = require('nylas');
 
 Nylas.config({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET,
+  clientId: '4a218fyk2t8bm2xof4j09hl0m',
+  clientSecret: '4x8ohk8tz36gwn0s9xby2n616',
 });
 
-const nylas = Nylas.with(ACCESS_TOKEN);
+const nylas = Nylas.with('8CjGSTSqmS83o50HeZeevLvEoBnPTo');
 
 const draft = nylas.drafts.build({
   subject: 'With Love, from Nylas',
@@ -13,7 +13,6 @@ const draft = nylas.drafts.build({
   body: 'This email was sent using the Nylas email API. Visit https://nylas.com for details.',
 });
 
-// Send the draft
 draft.send().then((message) => {
   console.log(`${message.id} was sent`);
 });

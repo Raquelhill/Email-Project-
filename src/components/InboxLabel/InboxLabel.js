@@ -1,10 +1,15 @@
 import './InboxLabel.css';
 
-const InboxLabel = () => {
+const InboxLabel = ({ createLabel, addLabel }) => {
   return (
-    <div>
-      <button>Create Inbox Label</button>
-    </div>
+    <>
+      <div>
+        <button onClick={() => createLabel()}>Create Inbox Label</button>
+      </div>
+      <div>
+        <button onClick={() => addLabel()}>Add Label to Email</button>
+      </div>
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ const nylas = Nylas.with('8CjGSTSqmS83o50HeZeevLvEoBnPTo');
 
 const draft = nylas.drafts.build({
   subject: 'With Love, from Nylas',
-  to: [{ name: 'My Nylas Friend', email: 'swag@nylas.com' }],
+  to: [{ name: 'My Nylas Friend', email: 'nylassechallenge@gmail.com' }],
   body: 'This email was sent using the Nylas email API. Visit https://nylas.com for details.',
 });
 

@@ -4,7 +4,7 @@ Nylas.config({
   clientSecret: '4x8ohk8tz36gwn0s9xby2n616',
 });
 const nylas = Nylas.with('8CjGSTSqmS83o50HeZeevLvEoBnPTo');
-const labelName = 'ahhhhhhhh';
+const labelName = 'nylas_challenge';
 let labelToUpdate;
 
 nylas.account.get().then((account) => {

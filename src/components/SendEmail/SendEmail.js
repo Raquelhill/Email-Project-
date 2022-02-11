@@ -1,9 +1,9 @@
 import './SendEmail.css';
 
-const SendEmail = (email) => {
+const SendEmail = ({ sendEmail }) => {
   return (
     <div>
-      <button onClick={() => email()}>Send Email</button>
+      <button onClick={() => sendEmail()}>Send Email</button>
     </div>
   );
 };
